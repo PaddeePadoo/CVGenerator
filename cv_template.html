@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name | strip_html }} - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            max-width: 900px;
+            margin: auto;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #d0e8ff;
+            padding: 20px;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>{{ name }}</h1>
+        <h2>{{ title }}</h2>
+        <p>{{ contact }}</p>
+
+        <div class="section">
+            {{ summary | safe }}
+        </div>
+
+        <div class="section">
+            {{ work_experience | safe }}
+        </div>
+
+        <div class="section">
+            {{ education | safe }}
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="section">
+            <ul>
+                {{ skills | safe }}
+            </ul>
+        </div>
+
+        <div class="section">
+            {{ languages | safe }}
+        </div>
+
+        <div class="section">
+            {{ interests | safe }}
+        </div>
+    </div>
+</body>
+</html>

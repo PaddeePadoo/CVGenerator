@@ -1,0 +1,4 @@
+jinja2
+markdown
+markdown-it-py
+bs4
