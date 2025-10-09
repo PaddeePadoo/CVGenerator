@@ -11,19 +11,19 @@ Description of you goes here
 
 ## **Skills**  
 
-### **Subtype** 
+**Subtype** 
 
 - List  
 - O  
 - Skills
 
-### **IAM & Infrastructure**  
+**Another Subtype**  
 
 - List  
 - O more 
 - Skills
 
-### **Documentation & Tooling**  
+**Third subtype**
 
 - So  
 - Many  
